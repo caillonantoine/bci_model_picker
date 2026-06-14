@@ -1,0 +1,39 @@
+{
+  "models": [
+    {
+      "name": "VSCHAOS",
+      "type": "Spectrogram VAE",
+      "description": "A vintage-flavoured neural audio synthesis package based on unsupervised / (semi-)supervised training of spectral information using variational auto-encoders, optimized for Max/MSP or PureData integration.",
+      "tags": ["Variational Auto-Encoder", "Spectral Synthesis", "Max/MSP"],
+      "repository": "https://github.com/acids-ircam/vschaos2"
+    },
+    {
+      "name": "DDSP",
+      "type": "DSP Hybrid",
+      "description": "A library of differentiable versions of common DSP functions (synthesizers, waveshapers, filters), allowing these interpretable elements to be used as part of a deep learning model for audio generation.",
+      "tags": ["Differentiable DSP", "Audio Synthesis", "Deep Learning"],
+      "repository": "https://github.com/magenta/ddsp"
+    },
+    {
+      "name": "RAVE",
+      "type": "Waveform VAE",
+      "description": "A variational autoencoder for fast and high-quality neural audio synthesis, designed for real-time performance and integration into DAWs and Max 8.",
+      "tags": ["Variational Auto-Encoder", "Real-time Audio", "Neural Synthesis"],
+      "repository": "https://github.com/acids-ircam/rave"
+    },
+    {
+      "name": "AFTER",
+      "type": "Latent Diffusion",
+      "description": "A diffusion-based generative model for real-time audio features transfer and exploration, blending style/timbre with structural inputs in MaxMSP and Ableton Live.",
+      "tags": ["Latent Diffusion", "Style Transfer", "Real-time Audio"],
+      "repository": "https://github.com/acids-ircam/after"
+    },
+    {
+      "name": "MRT2",
+      "type": "Latent Discrete",
+      "description": "A state-of-the-art open-weights model for real-time music generation, featuring a Python library for JAX/MLX inference and a C++ engine for efficient streaming audio.",
+      "tags": ["Symbolic Music", "Real-time Generation", "Streaming"],
+      "repository": "https://github.com/magenta/magenta-realtime"
+    }
+  ]
+}

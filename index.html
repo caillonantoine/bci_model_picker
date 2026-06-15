@@ -383,6 +383,26 @@
                 </div>
             </div>
         </div>
+
+        <h2 class="section-title" style="margin-top: 60px;">Model Interaction</h2>
+        <div class="interaction-container">
+            <p class="model-description">You can interact with the models using Python via OSC. Here is an example:</p>
+            <pre style="background: #f4f4f4; padding: 15px; border-radius: 10px; overflow-x: auto;"><code>from pythonosc import udp_client
+
+# Create OSC client
+mrt2 = udp_client.SimpleUDPClient("localhost", 3000)
+
+mrt2.send_message("/model", ["/Users/acaillon/Documents/Magenta/magenta-rt-v2/models/mrt2_small/mrt2_small.mlxfn"])
+mrt2.send_message("/buffersize", [16384])
+mrt2.send_message("/reset", [])
+
+# prompt slot (0-5), prompt value, prompt weight
+mrt2.send_message("/prompt", [0, "dubstep", 1.])
+mrt2.send_message("/prompt", [1, "piano", .9])
+            </code></pre>
+            <p class="model-description" style="margin-top: 20px;">And here is a basic Pure Data (pd) patch to get you started (don't forget to click on the <code>listen 3000</code> message):</p>
+            <img src="pd_screenshot.png" alt="Basic Pd Patch" style="max-width: 100%; border-radius: 10px; border: 1px solid #ddd;">
+        </div>
     </main>
 
 </body>
